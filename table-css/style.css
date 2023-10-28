@@ -1,0 +1,80 @@
+:root {
+  --lightnavy: #1F2937;
+}
+
+body {
+  background: #111827;
+  color: #fff;
+  font-family: sans-serif;
+  overflow:hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container .input-user {
+  margin-bottom: 20px;
+  width: 80%;
+  display: flex; 
+  justify-content: space-between;
+}
+.container .input-user .input-text {
+  width: 79%;
+  background: var(--lightnavy);
+  border: none;
+  padding: 15px 20px; 
+  color: #fff;
+  border-radius: 5px;
+}
+
+.container .input-user .input-text:focus{
+  outline: none;
+}
+
+.container .input-user button{
+  background: mediumaquamarine;
+  border: none;
+  padding: 10px 20px;
+  width: 15%;
+  color: white;
+  border-radius: 5px;
+}
+
+.container .input-user button:hover{
+  background: cadetblue;
+  cursor: pointer;
+}
+
+.container table {
+  border-collapse: collapse;
+  width: 80%;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0px 24px 44px -8px rgba(0,0,0,0.18)
+}
+table thead tr{
+  background: mediumaquamarine;
+}
+
+table td, table th {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--lightnavy)
+  
+}
+
+table tbody tr:nth-of-type(even) {
+  background: var(--lightnavy)
+}
+table tr:last-of-type {
+  border-bottom: 1px solid mediumaquamarine;
+}
+
+table tfoot td {
+  text-align:  center;
+  color: rgba(255,255,255,0.4)
+}
